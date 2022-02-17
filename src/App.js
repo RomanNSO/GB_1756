@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from 'react';
+import {Button} from './components/Button/Button';
+import {Input} from './components/Input/Input';
+import style from './App.module.css';
+
+const name = 'Geekbrains'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <h2 className={style.header}>Hello Geekbrains</h2>
+      <Input name={name}/>
+      <Button name={name}/>
+    </Fragment>
+  ) 
 }
 
 export default App;

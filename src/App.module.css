@@ -1,3 +1,8 @@
+* {
+  text-align: center;
+  background-color: #dddad1;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  color: green;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 30px;
+  margin-right: 30px;
 }
